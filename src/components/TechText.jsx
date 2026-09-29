@@ -1,0 +1,2 @@
+import React from 'react';
+export default function TechText({text='Portfolio'}){return <div className="tech-text" aria-label={text}>{[...text].map((c,i)=><span style={{'--i':i}} key={i}>{c===' '?'\u00a0':c}</span>)}</div>}

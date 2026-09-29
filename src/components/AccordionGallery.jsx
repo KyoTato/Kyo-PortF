@@ -1,0 +1,2 @@
+import React,{useState} from 'react';
+export default function AccordionGallery({items=[]}){const [active,setActive]=useState(2);return <div className="accordion-gallery">{items.map((item,i)=><button key={item.label} className={`accordion-item ${active===i?'active':''}`} onMouseEnter={()=>setActive(i)} onFocus={()=>setActive(i)} onClick={()=>setActive(i)} aria-label={item.label}><img src={item.image} alt={item.label}/><span>{String(i+1).padStart(2,'0')} / {item.label}</span></button>)}</div>}

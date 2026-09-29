@@ -1,0 +1,2 @@
+import React from 'react';
+export default function ScrollExpand({src,alt,title,children}){return <section className="scroll-expand"><img src={src} alt={alt||''}/><div className="scroll-overlay"><small>SCROLL TO EXPLORE</small><h2>{title}</h2>{children}</div></section>}
